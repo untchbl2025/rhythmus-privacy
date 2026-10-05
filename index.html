@@ -1,0 +1,254 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Datenschutz — Rhythmus</title>
+<!-- Bewusst keine Web-Fonts: die Seite lädt nichts von Dritten (IP-Übermittlung an Google Fonts vermeiden). -->
+<style>
+  /* Farben aus der App (ui/theme/Colors.kt): Grund #F4F4F7, Karten weiß, Tinte #0D0D12. */
+  :root {
+    --grund: #F4F4F7; --flaeche: #FFFFFF; --tinte: #0D0D12; --gedaempft: #5C5F6B;
+    --linie: #E1E2E8; --akzent: #17804F;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --grund: #0A0A0D; --flaeche: #16161B; --tinte: #F3F3F6; --gedaempft: #A3A6B3;
+      --linie: #2A2A33; --akzent: #5EE0A0;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; background: var(--grund); color: var(--tinte);
+    font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; line-height: 1.62;
+    font-size: 16.5px;
+  }
+  main { max-width: 720px; margin: 0 auto; padding: 64px 22px 96px; }
+  .marke { display: flex; align-items: center; gap: 12px; }
+  .marke svg { flex: none; }
+  .marke span {
+    font-size: 12.5px; font-weight: 600; letter-spacing: .26em; text-transform: uppercase;
+    color: var(--gedaempft);
+  }
+  h1 {
+    font-weight: 700; font-size: clamp(32px, 6vw, 46px); line-height: 1.05;
+    letter-spacing: -.035em; margin: 22px 0 0;
+  }
+  .stand { margin-top: 12px; color: var(--gedaempft); font-size: 14.5px; }
+  h2 { font-weight: 600; font-size: 21px; letter-spacing: -.02em; margin: 42px 0 10px; }
+  p { margin: 0 0 14px; }
+  ul { margin: 0 0 14px; padding-left: 20px; }
+  li { margin-bottom: 9px; }
+  a { color: var(--tinte); text-underline-offset: 3px; }
+  code { font-size: .92em; }
+  .kasten {
+    background: var(--flaeche); border-radius: 20px; padding: 22px 24px; margin: 30px 0;
+    box-shadow: 0 1px 2px rgba(13,13,18,.05), 0 8px 24px -14px rgba(13,13,18,.18);
+  }
+  .kasten p:last-child { margin-bottom: 0; }
+  .sprache { margin-top: 18px; font-size: 14.5px; }
+  hr { border: 0; border-top: 1px solid var(--linie); margin: 64px 0 0; }
+  footer { margin-top: 56px; color: var(--gedaempft); font-size: 14px; }
+</style>
+</head>
+<body>
+<main>
+  <div class="marke">
+    <!-- Bildmarke der App: fast geschlossener Ring mit Punkt (ic_launcher_foreground.xml) -->
+    <svg viewBox="26 26 56 56" width="30" height="30" aria-hidden="true">
+      <path d="M54,32 A22,22 0 1,1 32.1,52.2" fill="none" stroke="currentColor" stroke-width="7" stroke-linecap="round"/>
+      <circle cx="54" cy="32" r="4.5" fill="currentColor"/>
+    </svg>
+    <span>Rhythmus</span>
+  </div>
+
+  <h1>Datenschutz&shy;erklärung</h1>
+  <p class="stand">Stand: 05.10.2026 · Gilt für die Android-App „Rhythmus“
+    (englisch „Rhythm“), Paket <code>de.dh.rhythmus</code></p>
+  <p class="sprache"><a href="#en">English version below</a></p>
+
+  <div class="kasten">
+    <p><strong>Kurz gesagt:</strong> Rhythmus hat kein Konto und keinen eigenen
+      Server. Deine Gewohnheiten, Einträge und alles, was die App daraus lernt,
+      werden ausschließlich auf deinem Gerät gespeichert und berechnet. Wir erhalten
+      keine Daten von dir. Die App hat keinen Internetzugriff — nicht einmal die
+      Berechtigung dazu.</p>
+  </div>
+
+  <h2>Verantwortlich</h2>
+  <p>NAKID Industry · Kontakt:
+    <a href="mailto:nkd.industry@gmail.com">nkd.industry@gmail.com</a></p>
+
+  <h2>Welche Daten die App verarbeitet</h2>
+  <p>Auf deinem Gerät, im privaten Speicherbereich der App:</p>
+  <ul>
+    <li><strong>Gewohnheiten, Ziele, Routinen und Einstellungen</strong>, die du
+      anlegst</li>
+    <li><strong>Einträge</strong> (was du wann erledigt hast) und die daraus
+      gelernten Zeiten, Tagespläne, Statistiken und Zusammenhänge</li>
+    <li><strong>Bluetooth-Regeln</strong>: welche gekoppelten Geräte du welcher
+      Gewohnheit zuordnest</li>
+  </ul>
+  <p>Diese Daten werden nicht an uns und nicht an Dritte übertragen. Es gibt keine
+    Benutzerkonten, keine Werbung, keine Werbe-IDs, keine Analyse- oder
+    Absturzberichts-Bibliotheken und kein Tracking.</p>
+
+  <h2>Berechtigungen und wofür sie da sind</h2>
+  <p>Außer Benachrichtigungen und Weckern fragt die App jede Berechtigung erst an,
+    wenn du die zugehörige Funktion einschaltest. Ablehnen ist jederzeit möglich;
+    die Funktion bleibt dann aus.</p>
+  <ul>
+    <li><strong>Benachrichtigungen</strong> — für Erinnerungen, Timer, Hinweise und
+      den Wochenrückblick.</li>
+    <li><strong>Wecker &amp; Erinnerungen (exakte Alarme)</strong> und
+      <strong>Start nach dem Neustart</strong> — damit Erinnerungen zur geplanten
+      Minute kommen und nach einem Neustart wieder gesetzt werden.</li>
+    <li><strong>Kalender lesen</strong> (optional) — um deine Termine im Tagesplan
+      zu zeigen und Gewohnheiten drumherum zu planen. Die Termine werden nur auf
+      dem Gerät gelesen und nicht gespeichert oder weitergegeben.</li>
+    <li><strong>Kalender schreiben</strong> (optional, ab Werk aus) — um geplante
+      Gewohnheiten als Termine in einen von dir gewählten Kalender einzutragen.
+      Ist dieser Kalender mit einem Online-Konto verbunden (z. B. Google), überträgt
+      deine Kalender-App die Einträge wie jeden anderen Termin dorthin. Ausschalten
+      entfernt alle Einträge von Rhythmus wieder.</li>
+    <li><strong>Geräte in der Nähe (Bluetooth)</strong> (optional) — um zu erkennen,
+      wenn sich ein gekoppeltes Gerät (z. B. Kopfhörer, Auto) verbindet oder trennt,
+      und dann eine passende Gewohnheit vorzuschlagen.</li>
+    <li><strong>Spracheingabe</strong> — die Schnellerfassung per Sprache nutzt die
+      Spracherkennung deines Systems; die App selbst hat keine
+      Mikrofon-Berechtigung. Je nach Gerät und Einstellung verarbeitet der
+      Spracherkennungsdienst (meist von Google) die Aufnahme auf dem Gerät oder auf
+      seinen Servern; dafür gilt dessen Datenschutzerklärung. Rhythmus erhält nur
+      den erkannten Text.</li>
+  </ul>
+
+  <h2>Kein Internet</h2>
+  <p>Rhythmus fordert die Internet-Berechtigung nicht an und kann deshalb technisch
+    keine Verbindung aufbauen: keine Server, keine Schnittstellen, keine
+    Bibliotheken von Dritten, die etwas senden. Wir können deine Daten nicht sehen,
+    weil sie uns nie erreichen.</p>
+
+  <h2>Sicherung und Export</h2>
+  <p>Über „Backup &amp; Import“ kannst du alle Daten als JSON-Datei exportieren und
+    wiederherstellen oder Daten aus Loop Habit Tracker importieren. Wohin du eine
+    Exportdatei speicherst oder teilst, bestimmst du; ab dann liegt sie in deiner
+    Verantwortung bzw. bei dem Dienst, den du wählst. Ist auf deinem Gerät die
+    Android-Datensicherung aktiviert, kann das System die App-Daten in deine
+    eigene Gerätesicherung (z. B. bei Google) aufnehmen; das steuerst du in den
+    Systemeinstellungen.</p>
+
+  <h2>Löschen</h2>
+  <p>Einzelne Gewohnheiten und Einträge löschst du in der App. Deinstallierst du
+    die App (oder löschst ihre Daten in den Systemeinstellungen), werden alle
+    gespeicherten Daten entfernt. Einträge, die Rhythmus in deinen Kalender
+    geschrieben hat, entfernst du, indem du „Gewohnheiten in den Kalender“ vorher
+    ausschaltest. Bei uns liegt nichts, was gelöscht werden müsste.</p>
+
+  <h2>Kinder</h2>
+  <p>Die App richtet sich nicht gezielt an Kinder und erhebt keine Daten — auch
+    keine von Kindern.</p>
+
+  <h2>Änderungen</h2>
+  <p>Ändert sich etwas an dieser Erklärung, aktualisieren wir diese Seite und das
+    Datum oben. Kommt jemals eine Funktion hinzu, die Daten überträgt, steht sie
+    hier — und die App fragt dich vorher.</p>
+
+  <h2>Deine Rechte</h2>
+  <p>Da wir keine personenbezogenen Daten erheben, gibt es bei uns nichts, worüber
+    wir Auskunft geben oder was wir berichtigen oder löschen könnten. Fragen
+    beantworten wir unter der Adresse oben.</p>
+
+  <hr>
+
+  <h1 id="en" lang="en" style="font-size:32px;margin-top:56px">Privacy Policy</h1>
+  <p class="stand" lang="en">Last updated: 5 October 2026 · Applies to the Android
+    app “Rhythm” (German “Rhythmus”), package <code>de.dh.rhythmus</code></p>
+
+  <div lang="en">
+    <div class="kasten">
+      <p><strong>In short:</strong> Rhythm has no account and no server of its own.
+        Your habits, entries and everything the app learns from them are stored and
+        computed only on your device. We receive no data from you. The app has no
+        internet access — it doesn't even have the permission for it.</p>
+    </div>
+
+    <h2>Controller</h2>
+    <p>NAKID Industry · Contact:
+      <a href="mailto:nkd.industry@gmail.com">nkd.industry@gmail.com</a></p>
+
+    <h2>What the app processes</h2>
+    <p>On your device, in the app's private storage:</p>
+    <ul>
+      <li><strong>Habits, goals, routines and settings</strong> you create</li>
+      <li><strong>Entries</strong> (what you did and when) and the times, day plans,
+        statistics and patterns derived from them</li>
+      <li><strong>Bluetooth rules</strong>: which paired devices you link to which
+        habit</li>
+    </ul>
+    <p>This data is not transmitted to us or to any third party. There are no user
+      accounts, no ads, no advertising IDs, no analytics or crash-reporting
+      libraries and no tracking.</p>
+
+    <h2>Permissions and what they are for</h2>
+    <p>Apart from notifications and alarms, the app only requests a permission when
+      you switch on the feature that needs it. You can decline at any time; the
+      feature then stays off.</p>
+    <ul>
+      <li><strong>Notifications</strong> — for reminders, timers, hints and the
+        weekly review.</li>
+      <li><strong>Alarms &amp; reminders (exact alarms)</strong> and <strong>run at
+        startup</strong> — so reminders arrive at the planned minute and are set
+        again after a restart.</li>
+      <li><strong>Read calendar</strong> (optional) — to show your events in the day
+        plan and plan habits around them. Events are only read on the device; they
+        are not stored or shared.</li>
+      <li><strong>Write calendar</strong> (optional, off by default) — to add planned
+        habits as events to a calendar you choose. If that calendar is linked to an
+        online account (e.g. Google), your calendar app syncs these entries there
+        like any other event. Switching it off removes all of Rhythm's entries.</li>
+      <li><strong>Nearby devices (Bluetooth)</strong> (optional) — to notice when a
+        paired device (e.g. headphones, car) connects or disconnects, and then
+        suggest a matching habit.</li>
+      <li><strong>Voice input</strong> — quick capture by voice uses your system's
+        speech recognition; the app itself has no microphone permission. Depending
+        on your device and settings, the speech service (usually Google's) processes
+        the audio on the device or on its servers, under its own privacy policy.
+        Rhythm only receives the recognised text.</li>
+    </ul>
+
+    <h2>No internet</h2>
+    <p>Rhythm does not request the internet permission, so it technically cannot
+      open a connection: no servers, no APIs, no third-party libraries that send
+      anything. We cannot see your data, because it never reaches us.</p>
+
+    <h2>Backup and export</h2>
+    <p>Under “Backup &amp; import” you can export all data as a JSON file and restore
+      it, or import data from Loop Habit Tracker. Where you save or share an export
+      file is up to you; from then on it is in your hands or with the service you
+      choose. If Android backup is enabled on your device, the system may include the
+      app's data in your own device backup (e.g. with Google); you control this in
+      the system settings.</p>
+
+    <h2>Deletion</h2>
+    <p>You delete individual habits and entries in the app. Uninstalling the app (or
+      clearing its data in the system settings) removes all stored data. To remove
+      entries Rhythm has written to your calendar, switch off “Add habits to
+      calendar” first. There is nothing on our side that would need deleting.</p>
+
+    <h2>Children</h2>
+    <p>The app is not directed at children and collects no data — from anyone.</p>
+
+    <h2>Changes</h2>
+    <p>If anything changes, we update this page and the date above. Should a feature
+      ever transmit data, it will be described here, and the app will ask you
+      first.</p>
+
+    <h2>Your rights</h2>
+    <p>Since we collect no personal data, there is nothing on our side to disclose,
+      correct or delete. Questions go to the address above.</p>
+  </div>
+
+  <footer>NAKID Industry · Rhythmus / Rhythm · de.dh.rhythmus</footer>
+</main>
+</body>
+</html>
